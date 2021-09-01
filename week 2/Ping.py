@@ -6,6 +6,6 @@ while 1:
  try:
   print(ser.readline().decode("utf-8"))
   time.sleep(1)
- except ser.SerialTimeoutException:
+ except ser._timeout:
   print('Data could not be read')
   time.sleep(1)
