@@ -38,8 +38,7 @@ if __name__ == "__main__":
 
     #main loop
     while 1:
-        time.sleep(1)
-
+        time.sleep(0.05)
         if keyboard.is_pressed(79):         #press numbpad 1 to activate LED on arduino
             ser.write('1'.encode('utf-8'))      #sends command to arduino to activate LED
             logging.info("Led --> ON") 
