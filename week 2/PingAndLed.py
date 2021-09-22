@@ -45,4 +45,3 @@ if __name__ == "__main__":
         elif keyboard.is_pressed(82):       #press numbpad 0 to deactivate led on arduino
             ser.write('0'.encode('utf-8'))      #sends command to arduino to deactivate LED
             logging.info("Led --> OFF")
-            
