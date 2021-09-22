@@ -32,7 +32,7 @@ f.close()
 
 text = open("studentnames.txt")
 content = text.read()
-print("The file now contains:\n", content)
+print("The file now contains:", content)
 
 x = content.count("\n") 
 

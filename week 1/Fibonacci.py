@@ -2,11 +2,11 @@ numbers = int(input('How many numbers do you want: '))
 
 x = 0
 y = 1
-if numbers <= 2 :
-    if numbers > 0:
-        print(x)
-    if numbers > 1:
-        print(y)
+
+if numbers > 0:
+    print(x)
+if numbers > 1:
+    print(y)
 
 numbers = numbers - 2
 
