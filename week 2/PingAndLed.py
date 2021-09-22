@@ -18,7 +18,7 @@ def thread_Serial():
 
         #reading and logging data 
         try:
-            logging.info(ser.read(4).decode("utf-8") + '\n')
+            logging.info(ser.read(4).decode("utf-8"))
         except ser.SerialTimeoutException:
             logging.info('Data could not be read')
 
