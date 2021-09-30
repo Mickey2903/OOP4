@@ -11,7 +11,7 @@ window.geometry('350x200')
 #combobox initialisation
 combo = Combobox(window, state="readonly")
 combo['values']= ("Celsius to Fahrenheit","Fahrenheit to Celsius","Miles to Kilometers","Kilometers to Miles")
-combo.current(0)
+combo.current(2)
 combo.grid(column=0, row=0)
 
 #output label initialisation
@@ -45,7 +45,7 @@ def clicked():
             answer = number1 / 1.609344
 
         #output
-        lbl.configure(text= answer)
+        lbl.configure(text= round(answer,2))
 
     except:
         #error handler

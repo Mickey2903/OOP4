@@ -10,12 +10,14 @@ class RobotState(Enum):
     EMERGENCY_STOP = 4
 
 class MobileRobot:
+    _wheels = []
     def __init__(self, name, serial_nr):
         self.name = name
         self._serialnumber = serial_nr
         self.state = RobotState.WAITING_FOR_TASK
     
     def assignWheel(self,type,diameter,location):
+        self._wheels.append(Wheel(diameter,location))
         return "An " + type + " wheel with a diameter of " + str(diameter) + ", has been assigned to " + str(location.name)
 
     def performTask(self,task):
